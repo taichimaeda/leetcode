@@ -24,7 +24,7 @@ class Solution {
             }
         }
 
-        // find palindrome of even length
+        // find palindrome of odd length
         for (int i = 0; i < s.size(); i++) {
             int l = i, r = i;
             while (0 <= l && r < s.size() && s[l] == s[r]) {
