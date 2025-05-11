@@ -8,8 +8,12 @@ class Solution {
         if (numRows == 1) {
             return s;
         }
-        
-        vector<vector<char>> tab(numRows, vector<char>(s.size(), '\0'));
+    
+        char tab[numRows][s.size()];
+        for (int i = 0; i < numRows; i++)
+        for (int j = 0; j < s.size(); j++) {
+            tab[i][j] = '\0';
+        }
 
         int i = 0, j = 0;
         bool down = true;

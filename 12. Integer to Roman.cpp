@@ -8,7 +8,7 @@ class Solution {
         string s = format("{:04}", num); // cheating?
         stringstream ss{};
 
-        auto helper = [&](int digit, string&& four, string&& nine, string&& five, string&& one) {
+        auto helper = [&](int digit, string four, string nine, string five, string one) {
             if (digit == 4) {
                 ss << four;
                 return;
