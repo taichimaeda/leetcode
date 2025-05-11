@@ -6,7 +6,9 @@ class Solution {
    public:
     int myAtoi(string s) {
         int i = 0;
-        while (i < s.size() && s[i] == ' ') i++;
+        while (i < s.size() && s[i] == ' ') {
+            i++;
+        }
 
         if (s.empty()) {
             return 0;
