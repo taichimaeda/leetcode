@@ -5,7 +5,8 @@ using namespace std;
 class Solution {
    public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        // order of nums is irrelevant
+        // sort nums to make sure
+        // triplets [nums[i], nums[j], nums[k]] are unique
         sort(nums.begin(), nums.end());
 
         if (nums.size() < 3) return {};
