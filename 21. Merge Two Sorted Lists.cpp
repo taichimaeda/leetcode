@@ -27,8 +27,8 @@ class Solution {
         ListNode* curr2 = list2;
 
         ListNode* ret = new ListNode{};
-        ListNode* last = ret;
         ListNode* orig = ret;
+        ListNode* last = ret;
 
         auto advance1 = [&] {
             last = ret;
@@ -60,6 +60,7 @@ class Solution {
             }
         }
 
+        delete last->next;
         last->next = nullptr;
         return orig;
     }
